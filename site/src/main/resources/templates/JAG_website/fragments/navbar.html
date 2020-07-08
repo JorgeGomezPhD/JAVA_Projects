@@ -1,0 +1,29 @@
+<div th:fragment="navbar">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false"
+		aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" th:href="@{/}">Home</a>
+			</li>
+			<li class="nav-item"><a class="nav-link"
+				href="mailto:jorgeagomezphd@gmail.com">Contact Me</a></li>
+			<li class="nav-item"><a class="nav-link"
+				href="https://www.linkedin.com/in/jorge-a-gomez-phd-902962a5/"
+				target="blank">Linkedin</a></li>
+			<li class="nav-item"><a class="nav-link"
+				href="https://pubmed.ncbi.nlm.nih.gov/?term=gomez+paladini"
+				target="blank1">Publications</a></li>
+			<li class="nav-item"><a class="nav-link"
+				href="https://www.utsa.edu/biology/phd-neuro" target="blank1">UTSA
+					PhD</a></li>
+			<li class="nav-item"><a class="nav-link"
+				th:href="@{Restaurants}" target="blank1">Restaurants</a></li>
+		</ul>
+	</div>
+</nav>
+</div>

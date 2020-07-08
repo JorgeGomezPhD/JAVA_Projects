@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link th:replace="JAG_website/fragments/headLinks"> 
+<title>My Favorite Restaurants</title>
+</head>
+<body>
+<!--Adding in nav bar link  -->
+<div th:replace="JAG_website/fragments/navbar"></div>   
+<!--List of My Favorite Restaurants in San Antonio  -->
+ <ul>
+    <div class="restaurants">
+      
+    <h1>My Favorite Restaurants</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Restaurant</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><a href="https://thefriendlyspot.com/" target="blank2">The Freindley Spot</a></td>
+        <td><a href="https://www.google.com/maps/dir//943+S+Alamo+St,+San+Antonio,+TX+78205/@29.4147447,-98.493113,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x865c58af43b56be5:0xd1a1832962dd997d!2m2!1d-98.4909243!2d29.4147447!3e0" target="blank">943 S Alamo St, San Antonio, TX 78205</a></td>
+        <td>(210) 224-2337</td>
+        </tr>
+        <tr>
+          <td><a href="https://rosariossa.com" target="blank3">Rosarios Meican Restaurant</a></td>
+          <td><a href="https://www.google.com/maps/dir//910+S+Alamo+St,+San+Antonio,+TX+78205/@29.4154031,-98.4917799,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x865c58a8b51cd211:0x20c00520962b5d4b!2m2!1d-98.4895912!2d29.4154031!3e0" target="blank4">910 S. Alamo St, San Aantonio, TX 78205</a></td>
+          <td>(210) 223-1806</td>
+        </tr>
+        <tr>
+          <td><a href="https://dignowitymeats.com" target="blank5">Dignowity Meats</a></td>
+          <td><a href="https://www.google.com/maps/dir//1701+E+Houston+St,+San+Antonio,+TX+78202/@29.4252846,-98.5065124,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x865cf608392fc3f3:0xda19da74c7341827!2m2!1d-98.4714929!2d29.4252892!3e0" target="blank6">1701 E Houston St, San Antonio, Texas 78202</a></td>
+          <td>(210) 462-1496</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.whiskeycake.com/menu/" target="blank">Whisky Cake</a></td>
+          <td><a href="https://www.google.com/maps/dir//15900+La+Cantera+Pkwy,+San+Antonio,+TX+78256/@29.5919346,-98.6516882,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x865c667d65298c99:0x68c7a1df249727bf!2m2!1d-98.6166687!2d29.5919392!3e0" target="blank">15900 La Cantera Pkwy Suite 21200 San Antonio, TX 78256</a></td>
+          <td>(210) 236-8095</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.tanks.pizza" target="blank">Tanks Pizza</a></td>
+          <td><a href="https://www.google.com/maps/dir//902+N+New+Braunfels+Ave,+San+Antonio,+TX+78202/@29.4303925,-98.4962682,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x865cf5de33f89fa5:0xd4d84c69f1cbf5db!2m2!1d-98.4612487!2d29.4303971!3e0" target="blank">902 N. New Braunfels Ave. San Antonio, Texas 78202</a></td>
+          <td>(210) 320-9224</td>
+        </tr>
+      </tbody>
+    </table>
+  	</div>
+</ul>
+
+<!--Importing bootstrap scripts  -->
+<script th:replace="JAG_website/fragments/scriptLinks"></script>
+</body>
+</html>

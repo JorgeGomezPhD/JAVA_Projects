@@ -1,0 +1,23 @@
+<div th:fragment="mailList">
+	<form action="#" th:action="@{/}" th:object="${subscriber}"
+		method="post">
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" th:field="*{firstName}" /></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" th:field="*{lastName}" /></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="text" th:field="*{email}" /></td>
+			</tr>
+			<td><span style="color: black; font-weight: bold"><button
+						type="submit">Submit Your Name</button></td>
+			</span>
+			</tr>
+		</table>
+	</form>
+</div>

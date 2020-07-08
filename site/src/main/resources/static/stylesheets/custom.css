@@ -1,0 +1,22 @@
+ body {
+  background-color: #15f2c7;
+  color: white;
+}
+
+}
+.button {
+	background-color: red;
+}
+ .aboutme {
+   text-align: center; 
+}
+h2 {
+	text-align: center; 
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
