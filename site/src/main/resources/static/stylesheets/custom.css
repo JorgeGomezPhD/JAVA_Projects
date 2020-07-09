@@ -1,6 +1,6 @@
  body {
   background-color: #15f2c7;
-  color: white;
+   color: white;
 }
 
 }
@@ -10,6 +10,15 @@
  .aboutme {
    text-align: center;
 }
+.sublist {
+	color: black;
+}
+
+#entryField{
+	height:10em;
+	/* width: 80%; */
+}
+
 h2 {
 	text-align: center; 
 }

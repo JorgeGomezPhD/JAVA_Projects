@@ -4,16 +4,20 @@
 		<table>
 			<tr>
 				<td>First Name:</td>
-				<td><input type="text" th:field="*{firstName}" /></td>
+				<td class="sublist"><input type="text" th:field="*{firstName}" /></td>
 			</tr>
 			<tr>
 				<td>Last Name:</td>
-				<td><input type="text" th:field="*{lastName}" /></td>
-			</tr>
+				<td class="sublist"><input type="text" th:field="*{lastName}" /></td>
+			</tr>				
 			<tr>
 				<td>Email:</td>
-				<td><input type="text" th:field="*{email}" /></td>
+				<td class="sublist"><input type="text" th:field="*{email}" /></td>
 			</tr>
+ 			<tr>
+				<td>Ask me<br> a question:</td>
+				<td class="sublist"><input id="entryField" type="text" th:field="*{askme}" /></td>
+			</tr>					
 			<td><span style="color: black; font-weight: bold"><button
 						type="submit">Submit Your Name</button></td>
 			</span>

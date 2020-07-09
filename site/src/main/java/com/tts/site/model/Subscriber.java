@@ -21,6 +21,7 @@ public class Subscriber {
 	private String lastName;
 	private String username;
 	private String email;
+	private String askme;
 	
 	@CreationTimestamp
 	@Column
@@ -28,12 +29,13 @@ public class Subscriber {
 
 	public Subscriber() {}//suppose to be empty
 
-	public Subscriber(String firstName, String lastName, String userName, Date signedUp, String email) {
+	public Subscriber(String firstName, String lastName, String userName, Date signedUp, String email, String askme) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.username = userName;
 		this.signedUp = signedUp;
 		this.email= email;
+		this.askme= askme;
 	}
 
 	public String getFirstName() {
@@ -68,6 +70,14 @@ public class Subscriber {
 		this.email = email;
 	}
 
+	public String getAskme() {
+		return askme;
+	}
+
+	public void setAskme(String askme) {
+		this.askme = askme;
+	}
+
 	public Date getSignedUp() {
 		return signedUp;
 	}
@@ -83,11 +93,9 @@ public class Subscriber {
 	@Override
 	public String toString() {
 		return "Subscriber [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", username=" + username
-				+ ", email=" + email + ", signedUp=" + signedUp + "]";
+				+ ", email=" + email + ", askme=" + askme + ", signedUp=" + signedUp + "]";
 	}
 
-
-	
 	
 	
 }

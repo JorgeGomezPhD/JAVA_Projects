@@ -35,15 +35,17 @@ public class SiteController {
 	public String aboutme() {
 	    return "JAG_website/aboutme";
 	}	
-	
+
+//this section sets up the mailing list	
 	@PostMapping(value = "/")
 	public String addNewSubscriber(Subscriber site, Model model) {
 		subscriberRepository.save(new Subscriber(site.getFirstName(), 
-	        site.getLastName(), site.getUsername(), site.getSignedUp(), site.getEmail()));
+	        site.getLastName(), site.getUsername(), site.getSignedUp(), site.getEmail(), site.getAskme()));
 		model.addAttribute("firstName", site.getFirstName());
 		model.addAttribute("lastName", site.getLastName());
 		model.addAttribute("userName", site.getUsername());
 		model.addAttribute("email", site.getEmail());
+		model.addAttribute("askme", site.getAskme());
 		return "JAG_website/result";
 	}
 }
