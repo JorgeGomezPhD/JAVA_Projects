@@ -31,6 +31,11 @@ public class SiteController {
 	    return "JAG_website/Restaurants";
 	}
 	
+	@RequestMapping("/aboutme")
+	public String aboutme() {
+	    return "JAG_website/aboutme";
+	}	
+	
 	@PostMapping(value = "/")
 	public String addNewSubscriber(Subscriber site, Model model) {
 		subscriberRepository.save(new Subscriber(site.getFirstName(), 
