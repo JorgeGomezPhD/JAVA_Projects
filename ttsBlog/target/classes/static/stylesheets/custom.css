@@ -1,0 +1,8 @@
+body{
+	background-color:lightBlue;
+}
+
+#entryField{
+	height:10em;
+	/* width: 80%; */
+} /* this could also be put in line */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Blog Article</title>
+<link th:replace="article/fragments/headLinks"> 
+
+</head>
+
+<body>
+  <div th:replace="article/fragments/navbar"></div>
+  <div class="container-fluid">
+  <p> Please use the form below to edit an article:</p>
+	 <form action="#" th:action="@{/articles}" th:object="${article}" method="post">
+	  <table class="form-group">
+	  <div th:replace="article/fragments/formFields"></div>
+	  	<!-- <tr>
+	  		<td>Title</td>
+	  		<td><input class="form-control" type="text" th:placeholder="${title}"
+	  		 th:field="*{title}" ></td>
+	  	</tr>
+	  	<tr>
+	  		<td>Author</td>
+	  		<td><input class="form-control" type="text" th:placeholder="${author}"
+	  		 th:field="*{author}" ></td>
+	  	</tr>
+	   	<tr>
+	  		<td>Article</td>
+	  		<td><input id="entryField" class="form-control"  type="text" th:placeholder="${entry}"
+	  		 th:field="*{entry}" ></td>
+	  	</tr> -->
+	   	<tr>
+	  		
+	  		<td><button class="btn btn-sm btn-success" type="submit">Edit</button></td>
+	  	</tr>
+	  </table>
+	 </form>
+	  
+  
+  </div>
+  <script th:replace="article/fragments/scriptLinks"></script>
+</body>
+</html>

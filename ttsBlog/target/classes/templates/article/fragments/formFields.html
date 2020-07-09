@@ -1,0 +1,17 @@
+<div th:fragment="formFields">
+<tr>
+	  		<td>Title</td>
+	  		<td><input class="form-control" type="text" th:placeholder="${title}"
+	  		 th:field="*{title}" ></td>
+	  	</tr>
+	  	<tr>
+	  		<td>Author</td>
+	  		<td><input class="form-control" type="text" th:placeholder="${author}"
+	  		 th:field="*{author}" ></td>
+	  	</tr>
+	   	<tr>
+	  		<td>Article</td>
+	  		<td><input id="entryField" class="form-control"  type="text" th:placeholder="${entry}"
+	  		 th:field="*{entry}" ></td>
+	  	</tr>
+</div>
